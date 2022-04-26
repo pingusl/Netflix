@@ -1,15 +1,33 @@
+.body {
+  background-color: black;
+}
 .image {
-  min-height: 150px;
-  max-height: 300px;
-  min-width: 200px;
-  max-width: 300px;
-  border-width: 1px;
+  height: 150px;
+  min-width: 300px;
+  max-width: 400px;
+  object-fit: cover;
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
+}
+.category {
+  padding-bottom: 20px;
+  color: white;
+  font-weight: bold;
 }
 .section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  border-width: 1px;
+  /* border-width: 1px;
   border-style: solid;
-  border-color: red;
+  border-color: red; */
+  background-color: black;
+  padding-top: 30px;
+}
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
