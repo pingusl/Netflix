@@ -1,33 +1,41 @@
-.body {
+body {
+  width: 1200px;
   background-color: black;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 98%;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
 }
 .image {
   height: 150px;
   min-width: 300px;
   max-width: 400px;
   object-fit: cover;
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
 }
 .category {
   padding-bottom: 20px;
   color: white;
   font-weight: bold;
+  font-size: x-large;
 }
 .section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: red; */
-  background-color: black;
   padding-top: 30px;
 }
 .carrousel {
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  overflow: hidden;
+  /* overflow-x: scroll; */
   scroll-behavior: smooth;
 }

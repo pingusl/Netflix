@@ -1,15 +1,13 @@
 import "./App.css";
-import logo from "./components/assets/images/logoNetflix.png";
+import Logo from "./components/Logo";
 import arrayOfObjects from "./components/assets/movies_rnexgr.json";
 import Section from "./components/Section";
 
-// console.log(arrayOfObjects);
+// console.log(logo);
 function App() {
   return (
     <div className="App">
-      <div className="logo">
-        <img scr={logo} key="logo1" />
-      </div>
+      <Logo />
       {arrayOfObjects.map((item, index) => {
         return (
           <Section
